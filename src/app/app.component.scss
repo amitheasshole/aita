@@ -1,0 +1,87 @@
+@import '../styles/variables';
+
+.post {
+    flex-grow: 1;
+    min-height: 10em;
+    padding: 4em 2em;
+    background-color: white;
+    white-space:pre-wrap;
+}
+
+.vote-buttons {
+    display: flex;
+    flex-direction: horizontal;
+    padding: 0 3em;
+    background-color: white;
+    margin-bottom: 2em;
+
+    .vote {
+        flex-grow: 1;
+        height: 5rem;
+        background-color: $aita-red;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1.75em;
+        font-weight: 700;
+        color: white;
+        border-radius: 10px;
+        line-height: 5rem;
+        text-align: center;
+        letter-spacing: 2px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($aita-red, 10%);
+        }
+
+        @media (max-width:1370px) {
+            height: 5rem;
+            font-size: 1.25em;
+            line-height: 5rem;
+        }
+    }
+
+    .vote + .vote {
+        margin-left: 2em;
+    }
+}
+
+
+.cast-vote {
+    height: 8rem;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.verdict {
+    display: flex;
+    height: 8em;
+    margin: 0 3em;
+    text-align: center;
+
+    .vote-verdict {
+        flex-grow: 1;
+    }
+
+    .post-verdict {
+        flex-grow: 1;
+    }
+
+    .judgment {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.new-post {
+    cursor: pointer;
+    margin: 1em auto;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+}
+

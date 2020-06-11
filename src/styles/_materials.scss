@@ -1,0 +1,74 @@
+@import '~@angular/material/theming';
+
+$aita-brown-palette: (
+    50 : #e9e6e3,
+    100 : #c8c0b9,
+    200 : #a4978b,
+    300 : #806d5c,
+    400 : #644d39,
+    500 : #492e16,
+    600 : #422913,
+    700 : #392310,
+    800 : #311d0c,
+    900 : #211206,
+    A100 : #ff995e,
+    A200 : #ff782b,
+    A400 : #f75a00,
+    A700 : #de5000,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$aita-red-palette: (
+    50 : #f4e8e6,
+    100 : #e4c5bf,
+    200 : #d29f95,
+    300 : #c0796b,
+    400 : #b35c4b,
+    500 : #a53f2b,
+    600 : #9d3926,
+    700 : #933120,
+    800 : #8a291a,
+    900 : #791b10,
+    A100 : #ffb3ad,
+    A200 : #ff847a,
+    A400 : #ff5547,
+    A700 : #ff3e2d,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$aita-app-primary: mat-palette($aita-brown-palette);
+$aita-app-accent:  mat-palette($aita-red-palette);
+$aita-app-theme:   mat-light-theme($aita-app-primary, $aita-app-accent);
+
+// Include the default theme styles.
+@include angular-material-theme($aita-app-theme);
